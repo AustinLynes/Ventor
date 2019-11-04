@@ -1,18 +1,18 @@
 ## Ventor API
 ___
 
-| Users    | canNull | *         |   | Admin   | canNull |
-|----------|---------|-----------|---|---------|---------|
-| ID       | no      |           |   | ID      | no      |
-| username | no      |           |   |         |         |
-| email    | no      |           |   |         |         |
-| password | no      |           |   |         |         |
-| bio      | yes     |           |   |         |         |
-| age      | yes     |           |   |         |         |
-| ADMIN_ID | yes     | admin.id  |   |         |         |
+| Users    | canNull |
+|----------|---------|
+| ID       | no      |
+| username | no      |
+| email    | no      |
+| password | no      |
+| bio      | yes     |
+| age      | yes     |
+| is-admin | no      |
 
 ```md
-> /api/users  
+> /api/users        
     will give...
     CREATE
          a `user` 
@@ -29,25 +29,6 @@ ___
     DELETE 
         `user` with `:id` 
 ```
-```md
-> /api/admins    
-    will give...
-    CREATE 
-        `user` with `ADMIN_ID` 
-    READ all
-        `users` with `ADMIN_ID` 
-```
-```md
-> /api/admins/:admin_id  
-    will give...
-    READ 
-        `user` with `:admin_id` 
-    UPDATE 
-        `user` with `:admin_id` 
-    DELETE 
-        `user` with `:admin_id` 
-```
-
 
 | Posts    | canNull | *       |
 |----------|---------|---------|
