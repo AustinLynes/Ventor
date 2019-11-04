@@ -14,10 +14,10 @@ ___
 
 
 
-> `/api/users`        
+# > `/api/users`        
      will give CRUD functionality to all users in the database
     
-> `/api/administrators`    
+## > `/api/administrators`    
     will give CRUD functionality to all Admins in the Database..
 
 
