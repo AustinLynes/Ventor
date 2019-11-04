@@ -12,6 +12,14 @@ ___
 | age      | yes     |           |   |         |         |
 | ADMIN_ID | yes     | admin.id  |   |         |         |
 
+``` 
+
+> `/api/users`        // will give CRUD functionality to all users in the database
+    or 
+> `/api/administrators`   // will give CRUD functionality to all Admins in the Database..
+
+```
+
 | Posts    | canNull | *       |
 |----------|---------|---------|
 | ID       | no      |         |
@@ -24,5 +32,12 @@ ___
 | ID       | no      |         |
 | contents | no      |         |
 | POST_ID  | no      | post.id |
+| USER_ID  | no      | user.id |
+
+| Messeges | canNull | *       |
+|----------|---------|---------|
+| ID       | no      |         |
+| body     | no      |         |
+| to_id    | no      |         |
 | USER_ID  | no      | user.id |
 
