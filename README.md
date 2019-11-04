@@ -10,7 +10,7 @@ ___
 | password | no      |           |   |         |         |
 | bio      | yes     |           |   |         |         |
 | age      | yes     |           |   |         |         |
-| ADMIN_ID | no      | admin.id  |   |         |         |
+| ADMIN_ID | yes     | admin.id  |   |         |         |
 
 | Posts    | canNull | *       |
 |----------|---------|---------|
