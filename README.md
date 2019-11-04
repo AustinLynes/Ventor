@@ -1,10 +1,10 @@
 
 Create a Blog Api
 
-| Users       | canNull | | Admin       | canNull | *           |
-| ---         | ---     | | ---         | ---     | ---         |
-| ID          | no      | | ID          | no      |             |
-| username    | no      | | USER_ID     | no      | user.id     |
+| Users       | canNull |    | Admin       | canNull | *           |
+| ---         | ---     |--- | ---         | ---     | ---         |
+| ID          | no      |    | ID          | no      |             |
+| username    | no      |    | USER_ID     | no      | user.id     |
 | email       | no      |
 | password    | no      |
 | bio         | yes     |
