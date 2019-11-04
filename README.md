@@ -12,13 +12,14 @@ ___
 | age      | yes     |           |   |         |         |
 | ADMIN_ID | yes     | admin.id  |   |         |         |
 
-``` 
 
-> `/api/users`        // will give CRUD functionality to all users in the database
-    or 
-> `/api/administrators`   // will give CRUD functionality to all Admins in the Database..
 
-```
+> `/api/users`        
+     will give CRUD functionality to all users in the database
+    
+> `/api/administrators`    
+    will give CRUD functionality to all Admins in the Database..
+
 
 | Posts    | canNull | *       |
 |----------|---------|---------|
