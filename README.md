@@ -32,6 +32,26 @@ ___
         `user` with `:id` 
 ```
 
+```md
+> /api/admins        
+    will give...
+    CREATE
+         a `user` where is-admin === 1
+    READ 
+        all `users` where is-admin === 1
+```
+```md
+ > /api/admins/:id  
+    will give...
+    READ 
+        `user` with `:id` where is-admin === 1 
+    UPDATE 
+        `user` with `:id` where is-admin === 1 
+    DELETE 
+        `user` with `:id` where is-admin === 1
+```
+
+
 | Posts    | canNull | *       |
 |----------|---------|---------|
 | ID       | no      |         |
