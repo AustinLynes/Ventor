@@ -1,15 +1,17 @@
 ## Ventor API
 ___
 
-| Users    | canNull |
-|----------|---------|
-| ID       | no      |
-| username | no      |
-| email    | no      |
-| password | no      |
-| bio      | yes     |
-| age      | yes     |
-| is-admin | no      |
+| Users           | canNull |
+|-----------------|---------|
+| ID              | no      |
+| username        | no      |
+| email           | no      |
+| password        | no      |
+| name            | no      |
+| bio             | yes     |
+| age             | yes     |
+| profile-pic     | yes     |
+| is-admin        | no      |
 
 ```md
 > /api/users        
