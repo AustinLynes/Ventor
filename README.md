@@ -15,11 +15,11 @@ ___
 
 
 > ## `/api/users`        
-     will give CRUD functionality to all users in the database
- ---   
+will give CRUD functionality to all users in the database
+ 
 > ## `/api/administrators`    
-    will give CRUD functionality to all Admins in the Database..
- ---
+will give CRUD functionality to all Admins in the Database..
+
 
 | Posts    | canNull | *       |
 |----------|---------|---------|
