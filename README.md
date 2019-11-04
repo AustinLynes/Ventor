@@ -11,7 +11,7 @@ ___
 | age      | yes     |           |   |         |         |
 | ADMIN_ID | yes     | admin.id  |   |         |         |
 
-``` 
+
 > /api/users  
     will give...
     CREATE
@@ -44,7 +44,7 @@ ___
     DELETE 
 `user` with `:admin_id` 
 
-```
+
 
 | Posts    | canNull | *       |
 |----------|---------|---------|
@@ -53,7 +53,7 @@ ___
 | contents | no      |         |
 | USER_ID  | no      | user.id |
 
-``` 
+ 
 > /api/users/:id/posts  
     will give...
     READ 
@@ -76,7 +76,7 @@ ___
     DELETE 
 
         the `post` found with `:post_id` that comes from the `user` with `:id` 
-```
+
 
 | Comments | canNull | *       |
 |----------|---------|---------|
@@ -85,7 +85,7 @@ ___
 | POST_ID  | no      | post.id |
 | USER_ID  | no      | user.id |
 
-``` 
+ 
 > /api/users/:id/posts/:post_id/comments
     will give...
     READ 
@@ -111,7 +111,7 @@ ___
 
         the `comment` with `:comment_id` on the `post` with `:post_id` that comes from the `user` with `:id` 
 
-```
+
 
 | Messeges | canNull | *       |
 |----------|---------|---------|
@@ -120,7 +120,7 @@ ___
 | to_id    | no      |         |
 | USER_ID  | no      | user.id |
 
-``` 
+ 
 
 > /api/users/:id/messeges/:to
 
@@ -132,7 +132,7 @@ ___
     CREATE 
 
         a `messege` from the `user` with `:id` that goes to the `user with the id of :to` 
-        
+
 
 > /api/users/:id/messeges/:to/:messege_id
 
