@@ -2,14 +2,15 @@
 
 ___
 
-| Users    | canNull |  | Admin   | canNull | *       |
-|----------|---------|--|---------|---------|---------|
-| ID       | no      |  | ID      | no      |         |
-| username | no      |  | USER_ID | no      | user.id |
-| email    | no      |  |         |         |         |
-| password | no      |  |         |         |         |
-| bio      | yes     |  |         |         |         |
-| age      | yes     |  |         |         |         |
+| Users    | canNull | *         |   | Admin   | canNull |
+|----------|---------|-----------|---|---------|---------|
+| ID       | no      |           |   | ID      | no      |
+| username | no      |           |   |         |         |
+| email    | no      |           |   |         |         |
+| password | no      |           |   |         |         |
+| bio      | yes     |           |   |         |         |
+| age      | yes     |           |   |         |         |
+| ADMIN_ID | no      | admin.id  |   |         |         |
 
 | Posts    | canNull | *       |
 |----------|---------|---------|
