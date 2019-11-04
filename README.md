@@ -10,7 +10,6 @@ ___
 | name            | no      |
 | bio             | yes     |
 | age             | yes     |
-| profile-pic     | yes     |
 | is-admin        | no      |
 
 ```md
