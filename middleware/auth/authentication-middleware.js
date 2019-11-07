@@ -6,7 +6,7 @@ module.exports = (req, res, next) => {
     {
         jwt.verify(token, secrets.jwtSecret, (err, decodedToken)=>{
             if(err){
-                res.status(401).json({messege:'Invalid Token was Given Terminating Process..'})
+                res.status(401).json({messege:'Invalid/Modified Token was Given Terminating Process..'})
             }else{
                 //the token is good
                 req.username = decodedToken.username
