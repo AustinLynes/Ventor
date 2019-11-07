@@ -4,8 +4,7 @@ function find() {
     return db('users')
 }
 function findAdmin() {
-    return db('users').where({ 'is-admin': 1 })
-
+    return db('users').where( 'isAdmin', 1 )
 }
 function findById(id) {
     return db('users')

@@ -11,7 +11,7 @@ exports.seed = function(knex) {
         "password":'Password',
         "name":'ven',
         "bio":'the main tester for the ventor app, also is an admin',
-        "is-admin": 1
+        "isAdmin": 1
       },
       {
         "username":'Ventor-Bot',
@@ -19,7 +19,7 @@ exports.seed = function(knex) {
         "password":'Password',
         "name":'ven',
         "bio":'the main tester for the ventor app',
-        "is-admin": 0
+        "isAdmin": 0
       },
       ]);
     });
