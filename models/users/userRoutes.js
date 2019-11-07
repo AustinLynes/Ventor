@@ -12,7 +12,7 @@ router.get('/users', auth, (req, res) => {
 
 })
 
-router.get('/users/admin',auth, (req, res) => {
+router.get('/users/admin',auth,admin, (req, res) => {
     Users.findAdmin()
         .then(admin => {
             res.status(200).json(admin)
@@ -48,5 +48,22 @@ router.put('/users/:id',auth, validateUserId, (req, res) => {
 
 // middleware
 
+function admin(req, res, next){
+    const username = req.username
 
+    Users.findBy(username)
+    .then(user=>{
+        if(user.isAdmin){
+                next()
+        }
+        else{
+            res.status(403).json({messege:'Im sorry but you are not an admin and cannot see this page'})
+        }
+    })
+    .catch((err)=>{
+        console.log(err)
+        res.status(404).json({messege:'User not Found'})
+    })
+    
+}
 module.exports = router

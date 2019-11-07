@@ -19,7 +19,7 @@ server.use('/api', userRoutes)
 
 server.post('/login', validateUser, (req, res, next) => {
     const { username, password } = req.headers
-    Users.findBy({ username })
+    Users.findBy( username )
         .then(user => {
             if (user && bcrypt.compareSync(password, user.password)) {
                 const token = generateToken(user)

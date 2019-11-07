@@ -28,6 +28,10 @@ function update(id, user) {
 function remove(id) {
     return db('users').where('id', id).del()
 }
+
+function findBy(username){
+   return db('users').where({username}).first()
+}
 module.exports = {
     find,
     findAdmin,
@@ -35,5 +39,6 @@ module.exports = {
     insert,
     remove,
     update,
+    findBy,
     findBy
 }
